@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01.css">
+    <style>
+        body {
+            background-color: #d0d0d0;
+            padding: 1em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #mainTitle {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is a comment in HTML
+    they can go on for as many lines as you want
+  -->
+    <!-- Emmet for the below h1: h1#mainTitle -->
+    <h1 id="mainTitle">First Day Notes: </h1>
+    <!-- When typing emmet abbreviations, you will type the tag name (h2 in this case), and then any classes or ids that will go onto the tag. Then you will  press tab or enter to create the tag(s). If the emmet suggestion goes away due to a typo, press ctrl + space to get the suggestion to return -->
+    <h2>NOTES</h2>
+    <!-- Emmet for the below ul: ul.notes#list -->
+    <ul class="notes" id="list">
+        <!-- alt+shift+up or down (option+shift+up or down on mac) will duplicate the line the cursor is on either above or below -->
+        <!-- Emmet for the below list items: li.list-items*11 -->
+        <li class="list-items">When using Emmet, class is notated by a "." and id is by "#".</li>
+        <li class="list-items">HTML stands for Hypertext Markup Language.</li>
+        <li class="list-items">DOCTYPE states the type of our document. In this case, HTML.</li>
+        <li class="list-items">our html tag denotes our language to be English, per the lang="en".</li>
+        <li class="list-items">The head tag houses metadata, or detailed data about our doc.</li>
+        <li class="list-items">UTF-8 specifies character encoding. Each character (letter, number, even spaces) has a numeric value.</li>
+        <li class="list-items">viewport notes the device we are reading our document on.</li>
+        <li class="list-items">title reflect the name that displays on our browser tab.</li>
+        <li class="list-items">link allow us to connect to other files, such as our stylesheet (CSS)</li>
+        <li class="list-items">a style tag can help us inject css into our document. *Not the best practice</li>
+        <li class="list-items">the body tag houses all the other tags that we want to display onto our browser. This will be what the user sees!</li>
+    </ul>
+    <div>
+        <div class="one">
+            <h1 id="title">Two Truths and a Lie</h1>
+        </div>
+        <div class="prompts">
+            <div class="first">
+                <h3 class="headings">Blind and Deaf</h3>
+                <p class="descriptions">I am legally blind in both my left eye and ear</p>
+            </div>
+            <div class="second">
+                <h3 class="headings">Rubik's Cube</h3>
+                <p class="descriptions">I can solve a rubik's cube in less than 30 seconds</p>
+            </div>
+            <div class="third">
+                <h3 class="headings">Travel Boy</h3>
+                <p class="descriptions">I have been to 5 out of 7 continents</p>
+
+                <!-- hold down ctrl and press / to make a comment -->
+                <!-- example of a comment on a pre-existing line -->
+                <!-- example
+  of
+  a
+  multi
+  line
+  comment -->
+                <!-- H1-H6 Tags -->
+                <!-- <h1>H1</h1>
+  <h2>H2</h2>
+  <h3>H3</h3>
+  <h4>H4</h4>
+  <h5>H5</h5>
+  <h6>H6</h6> -->
+                <!-- 
+    Bronze:
+      - Make an h1 tag saying 'Two Truths and a Lie'
+      - Make 3 h3 tags, each saying a short blurb about that option (example: 'Been to Russia')
+      - Make 3 p tags (one for each h3 tag), giving a short sentence elaborating that truth/lie
+      - Wrap it all in a div tag
+    Silver:
+      Using a linked CSS file (see naming):
+      - Using the linked CSS file:
+      - Make the h1 tag LIGHT GREEN and CENTERED
+      - Make each h3 tag BLUE
+      - Make each p tag RED
+      - Wrap it all in a BORDER that is THICK and BLACK
+    Gold:
+      - Curve the corners of that BORDER
+      - Give it a BACKGROUND COLOR of GREY
+      - Wrap each Truth/Lie in separate divs, give them each a BORDER, curve the BORDER, and make each BACKGROUND COLOR LIGHT GREY
+      - CENTER everyting in each div
+      - Line each Truth/Lie side-by-side
+
+Bronze:
+  - Make an h2 tag saying 'Movies!'
+  - Make a TABLE with a HEADER
+  - In the header, have 4 COLUMNS with the headers reading: 'Movie Title', 'Year', 'Runtime', and 'Rating'
+  - Add at least 3 movies (you can make the info up)
+  Silver:
+  Using CSS:
+  - Add a BACKGROUND COLOR of LIGHT SKY BLUE
+  - Put a BORDER around the table that is BLACK
+  Gold:
+  - ITALICIZE the movie titles
+  - Set the table in the CENTER
+
+   -->
+
+                <div class="movie-wrapper">
+                    <h2>Movies!</h2>
+                    <table class="movies-table">
+                        <tr>
+                            <th>Movie Title</th>
+                            <th>Year</th>
+                            <th>Runtime</th>
+                            <th>Rating</th>
+                        </tr>
+                        <tr>
+                            <td class="title">Wrath of Men</td>
+                            <td>2021</td>
+                            <td>2h1m</td>
+                            <td>7.2/10</td>
+                        </tr>
+                        <tr>
+                            <td class="title">The Gentlemen</td>
+                            <td>2020</td>
+                            <td>1h53m</td>
+                            <td>7.8/10</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Spiral</td>
+                            <td>2021</td>
+                            <td>1h33m</td>
+                            <td>5.3/10</td>
+                        </tr>
+                    </table>
+                </div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ul>li*4 -->
+    <ul>
+        <li>Humans make errors. Gasp!</li>
+        <li>The browser is home of the console.</li>
+        <li>The Console Object</li>
+        <!-- ul>li*5 -->
+        <ul>
+            <li>console.log()</li>
+            <li>console.warn()</li>
+            <li>console.error()</li>
+            <li>And many more!</li>
+            <li>console.table()</li>
+        </ul>
+        <li>The console is ONLY used for debugging.</li>
+    </ul>
+    <script>
+        console.log('This message is a string');
+        let name = 'Jerome';
+        console.log('Log:', name);
+        console.warn('This is a warning');
+        let warning = 'uh oh...';
+        console.warn('Warn:', warning);
+        console.error('This is an error message');
+        let err = 'This is looking real bad';
+        console.error('Error:', err);
+        let arr = [1, 2, 3, 4, 5, 6];
+        let ex = [
+            ["John", "Smith"],
+            ["Jane", "Doe"],
+            ["Emily", "Jones"]
+        ];
+        console.table(ex);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+#title {
+    color: rgb(69, 114, 69);
+    text-align: center;
+}
+
+.headings {
+    color: blue;
+    border-radius: 25px;
+    background-color: gray;
+}
+
+.first,
+.second,
+.third {
+    border-radius: 25px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.descriptions {
+    color: red;
+}
+
+
+/* this is a comment in css */
+
+
+/* this
+  is
+  multi
+  comment */
+
+div {
+    /* border: black;
+    border-width: 25px;
+    border-style: solid; */
+    border: solid black thick;
+    background: gray;
+}
+
+.movies-table {
+    background-color: lightskyblue;
+    border: solid black 2px;
+}
+
+.title {
+    font-style: italic;
+}
+
+.movie-wrapper {
+    display: flex;
+    justify-content: center;
+}
