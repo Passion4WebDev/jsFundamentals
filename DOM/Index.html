@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM Manipulation</title>
+</head>
+<body>
+<!--  
+DOM stands for Document Object model, and is what allows our JS to interact with the HTML & CSS of our page. The DOM
+specifies how browsers should creat a model of an HTML page and how JS can access and update the contents of a web page
+while it is in the browser's window.
+
+DOM  is a n object respresentation of  a web page, which can be modified with a scripting 
+language like JavaScript
+
+Two primary functions:
+1. Making a model of an HTML page
+-When the browser loads a webpage, it creates a model of the page in memory.
+-the DOM specifies the way in which the browser should structure an object 
+model because the DOM tree is mad of objects
+2. Accessing and changing the HTML page
+-the DOM also provides methods and properties to access and update each object in 
+the model, which in turn updates what the user sees in the browser.
+
+Usually when working with the DOM tree, we will access and element we want to 
+work with, and then we will modify, or manipulate it.
+
+ACCESSING:
+COMMON METHODS FOR ACCESSING A SINGLE ELEMENT
+-getElementById()
+-querySelector()
+COMMON METHODS FOR ACCESSING MULTIPLE ELEMENTS:
+-querySelectorAll()
+-getElementByClassName()
+-getElementByTagName()
+
+MANIPULATING:
+COMMON METHODS FOR WORKING WITH HTML CONTENT:
+-innerHTML
+-textContent
+-createElement
+
+COMMON METHODS FOR WORKING WITH TAG ATTRIBUTES:
+-className/id
+-setAttribute()
+-getAttribute()
+
+-->
+<!-- ! 1-->
+<p id='testParagraph'>Sample Text</p>
+<!-- ! 2-->
+<p class="sampleClass">A Class paragraph</p>
+<p class="sampleClass">A Class paragraph</p>
+<p class="sampleClass">A Class paragraph</p>
+<p class="sampleClass">A Class paragraph</p>
+<h2 class="sampleClass">A Class paragraph</h2>
+<hr /> 
+<!-- ! 3-->
+
+<button id="clickThis">Click!</button>
+<br>
+<br>
+<!-- ! 4-->
+
+<label for="nameInput">Enter your name: </label><br />
+<input type="text" id="nameInput" placeholder="Your Name Here"/>
+
+</body>
+
+<span id="spanTest"> Hello <span style="display: none">
+World</span></span>
+
+
+</body>
+
+<!-- 
+We can write javascript directly in our html page by type it
+within a <script> tag, similar to how we would write css in a 
+<style> tag
+-->
+<script> // now we can write some javascript
+console.log('Hello from the script tag~!');
+</script>
+<!--
+<script>
+console.log('Hello from the script~!');
+-->
+<!--
+What if we want to use an external javascript file in this webpage?
+-->
+<!--link css & javascript on the bottom of the page instead of the top of webpage--> 
+<script src='script.js'></script>
+
+
+
+</body>
+</html>

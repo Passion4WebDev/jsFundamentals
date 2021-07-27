@@ -225,3 +225,9 @@ const str = 'The quick brown fox jumps over the lazy dog.';
 
 const word = sent.split(' ');
 console.log(word);
+
+
+
+
+
+

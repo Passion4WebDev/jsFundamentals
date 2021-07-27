@@ -130,3 +130,125 @@ greeting();
 greeting(firstName, lastName);
 greeting(firstName, null);
 greeting('', lastName);
+
+
+
+let studentName = "pAul";
+let capName;
+
+for (let x in studentName){
+    if (x == 0){
+        capName = studentName[x].toUpperCase();
+        } else{
+            capName += studentName[x].toLowerCase();
+        }
+}
+console.log(capName);
+
+let student = { name:"Peter", awesome: true, degree:"JavaScript", week: 1}
+
+
+
+let catArray =['tabby', 'british shorthair',' burmese', 'main coon'];
+for (let cat in catArray){
+    console.log(cat)
+}
+
+function hi(){console.log('Hello!')}
+
+blah = function (){
+    returm lala;
+    lala = "hi";
+    } 
+    console.log(blah());
+
+
+function sum(a, b) {
+return a + b;
+    }
+    console.log(sum(1, 2, 3, 4));
+
+  
+    function foo(){
+        return Bar();
+        function bar() {
+return "Poppin' bottles";
+        }
+    }
+    console.log(foo());
+
+    function whatDoesItDo(val){
+        return val ? 1 : 2;
+    };
+
+
+    function whatDoesItDo(color){
+        if (color !== 'blue') || color !== 'green'){
+            color = 'red';
+        }
+        return color;
+    };
+
+    console.log(whatDoesItDo());
+
+
+    let apples = x => console.log(`There are ${x} apple.`);
+    apples(10);
+
+
+    /* ! CHALLENGE 7.26.2021 Monday
+
+    Write a for loop that counts from 1 to 100
+    -for numbers that one evenly divisible by 3, print: 'FIZZ'
+    -for numbers that are evenly divisible by 5, print: 'BUZZ'
+    -for numbers that one evely divisible by BOTH by 3 and 5, print:
+    'FIZZ BUZZ'
+
+    remainder: a number is evenly divisible by another number when the remainder is 0
+    */
+   
+   for(let i = 0; i <= 100; i++) {
+       console.log(i)
+       if(i % 3 == 0) {
+       console.log('FIZZ');
+       }// I = 26;
+// 5 * 5 - 25
+// 26-25 = 1
+
+// 26 % 5 = 1
+
+    if(i % 5 == 0);{
+    console.log('BUZZ');
+       }
+   }
+   for (let i = 0; i <=100; i++){
+    console.log(i)
+    if(i % 3 == 0){
+    console.log('FIZZ');
+    console.log(i, 'is evenly divisible by 3');
+    if(i % 5 == 0);
+    console.log('BUZZ');
+}
+}
+
+for (let k = 1; k <= 100; k++) {
+    //if (k % 3 == 0 && k % 5 == 0) {
+    if(k % 15 == 0) {
+    console.log('FIZZ BUZZ');
+    } else if(k % 3 == 0) {
+    console.log('FIZZ');
+    } else if(k & 5 == 0) {
+        console.log('BUZZ')
+    } else{
+        console.log(k);
+    }
+}
+
+   
+
+
+
+
+
+ 
+
