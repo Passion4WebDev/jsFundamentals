@@ -53,13 +53,13 @@ console.log(document.getElementById('spanTest').innerHTML);
 
 //! addEventListener()
 
-document.getElementById('clickThis').addEventListener('click', 
-function(event) {
+//document.getElementById('clickThis').addEventListener('click', 
+//function(event) {
 // now i can write code 
 // console.log(event.target);
-console.log(event.target); 
-event.target.style.backgroundColor = '#031bf3'
-})
+//console.log(event.target); 
+//event.target.style.backgroundColor = '#031bf3'
+//})
 
 //! addEventListerner - keyup
 
@@ -76,3 +76,36 @@ document.getElementsByTagName('p')[1].innerText =
 `Everyone, say hello to ${e.target.value}`;
 }
 })
+
+// ! addEventListener()
+//CHALLENGE
+// Move the button into a variable, and when you click the button it
+//will trun blue, or if it is already blue, it will turn red
+//1. move the button into a variable
+//2. click it, and it will turn blue
+//3. ifit is blue, turn red
+
+let button = document.getElementById('clickThis');
+
+button.addEventListener('click', ev => {
+ console.log(ev.target.backgroundColor);
+if(ev.target.style.backgroundColor == 'blue'){
+    ev.target.style.backgroundColor = 'red';
+ } else {
+    ev.target.style.backgroundColor = 'blue';
+ }
+
+})
+
+
+
+
+
+
+//document.getElementById('clickThis').addEventListener('click',
+//function(event) {
+    //now i can write code
+    //console.log(event);
+   // console.log(event.target);
+    //event.target.style.backgroundColor ='#031bf3'
+//})

@@ -1,19 +1,23 @@
 */
    
+Cahllenge #1
+
 for(let i = 0; i <= 100; i++) {
     console.log(i)
     if(i % 3 == 0) {
     console.log('FIZZ');
-    }// I = 26;
+    }if(i % 5 == 0);{
+    console.log('BUZZ');
+   }
+   }
+    
+// I = 26;
 // 5 * 5 - 25
 // 26-25 = 1
 
 // 26 % 5 = 1
 
- if(i % 5 == 0);{
- console.log('BUZZ');
-    }
-}
+ 
 for (let i = 0; i <=100; i++){
  console.log(i)
  if(i % 3 == 0){
@@ -58,43 +62,60 @@ Name and address will both hold values that are strings.  This information can b
 Sections will be an object that will store a property called "collections", which is an array of more objects.  You should include at least 2 objects inside the collections array.
 the objects stored in the collections array will hold properties of classification, count, and aisle.
 both the classification and aisle properties should hold strings as values, and count should hold a value that is a number.
-/* */
 
-let func = (x,y) => console.log(x,y);
-func('peoples', 'names');
-function writtenOutOne(x, y) {
-	console.log(x, y)
-}
-writtenOutOne('person1', 'person2');
-for(let x = 0; x <= 100; x++){
-	// if(x % 24 == 0){
-  if(x % 6 == 0 && x % 8 == 0) {
-		console.log(x,'FIZZ BUZZ')
-	} else if(x % 6 == 0) {
-		console.log(x,'FIZZ')
-	} else if(x % 8 == 0) {
-		console.log(x,'BUZZ')
+/* 
+  CHALLENGE:
+  Write a for loop that counts from 1 to 100
+    - for numbers that are evenly divisible by 3, print: 'FIZZ'
+    - for numbers that are evenly divisible by 5, print: 'BUZZ'
+    - for numbers that are evenly divisible by BOTH 3 and 5, print: 'FIZZ BUZZ'
+  
+    reminder: a number is evenly divisible by another number when the remainder is 0
+*/
+
+Cahllenge #1
+
+for(let i = 0; i <= 100; i++) {
+    console.log(i)
+    if(i % 3 == 0) {
+    console.log('FIZZ');
+    }if(i % 5 == 0);{
+    console.log('BUZZ');
+   }
+   }
+    
+Challenge #1b
+
+for(let K = 1; k <= 100; k++){
+  // if(k % 3 == 0 && k % 5== 0){
+  if (k % 15 == 0){
+        console.log('FIZZ BUZZ');
+	} else if(k % 3 == 0) {
+		console.log('FIZZ');
+	} else if(k % 5 == 0) {
+		console.log('BUZZ');
 	} else {
-		console.log(x)
-	}
+        console.log(k);
+    }
 }
 
-
-Challenge #2
-
-for(let x = 0, x <= 100; x++){
-    // if(x % 24 == 0){
-    if(x % 6 == 0 && x % 8 == 0)
-        console.log(x, 'FIZZ BUZZ'){
+  Challenge #2
+  
+  let func =(x,y) => console.log(x,y);
+    func('people', 'name');function writtenOutOne(x,y){
+	console.log(x,y)
+	}writtenOutOne('person1','person2'); for (let x = 0; x <=100 x++){
+      // if(x % 24 == 0){
+    if(x % 6 == 0 && x % 8 == 0){
+        console.log(x, 'FIZZ BUZZ')
     } else if(x % 6 == 0){
         console.log(x,'FIZZ')
     } else if(x % 8 == 0 ){
-        console.log(x,'BUZZ'){
+        console.log(x,'BUZZ')
     } else { 
-console.log(x)
+        console.log(x)
         }
     }
-}
 
 Challenge #3
 
@@ -105,6 +126,7 @@ function findPerimeter(length, width){
     } else {console.log(`False. The perimeter is ${x}`)
     }
   }  
+  findPerimeter(5, 5.1);
 
 Challenge #4
 
@@ -129,12 +151,3 @@ let library = {
 console.log(library)
 console.log(library.sections.collections)
 
-/* 
-  CHALLENGE:
-  Write a for loop that counts from 1 to 100
-    - for numbers that are evenly divisible by 3, print: 'FIZZ'
-    - for numbers that are evenly divisible by 5, print: 'BUZZ'
-    - for numbers that are evenly divisible by BOTH 3 and 5, print: 'FIZZ BUZZ'
-  
-    reminder: a number is evenly divisible by another number when the remainder is 0
-*/
