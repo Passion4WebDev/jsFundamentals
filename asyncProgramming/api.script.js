@@ -4,7 +4,7 @@ const searchForm = document.getElementsByTagName('form')[0]; // an array
 const spaceShips = document.querySelector('ul'); // gets the first ul tag
 // (the first tag/class/id combo we give it in the string)
 
-searchForm.addEventListener('submit', fetchSpace)
+searchForm.addEventListener('submit, fetchSpace')
 
 /* HOISTING MINI LESSON 
 //JS will compile code reading from top to bottom, BUT actually 
@@ -17,7 +17,7 @@ console.log(myVar1); // error: cannot access before initialization
 console.log(myVar2); // undefined
 
 let myVar1 = 'Awesome';
-let myVar1 = 'Not Awesomee?';
+let myVar2 = 'Not Awesomee?';
 
 let myFunc() => { console.log('Arrow test')}
 */

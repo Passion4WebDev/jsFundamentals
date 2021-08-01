@@ -3,7 +3,7 @@
 
 -Allows us to program in a synchronous manner while still
 allowing code to run in the background.
--Helps keep our sistes responsive
+-Helps keep our sites responsive
 
 */
 

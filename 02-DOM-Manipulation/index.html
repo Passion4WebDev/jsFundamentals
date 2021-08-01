@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+ 
+<!--All of our HTML code will go here <p> id="testParagraph">sample tex</p>-->
+  <p id="testParagraph">Beautiful</p>  
+
+<script type="text/javascript"> 
+    /*All of our JavaScript code will go here */
+  document.getElementById('testParagraph').style.color='blue';
+</script>
+<script>
+document.getElementById('testParagraph').style.color ='blue';
+console.log(document.getElementById('testParagraph').style.color);
+
+</script>
+
+<!--All of of our HTML code will go here-->
+<p id="testParagraph">Sample Text</p>
+<p class="sampleClass">This paragraph has a class of'sampleCass'</p>
+<script type="text/javascript">
+/*All of our JavaScript code will go here */
+console.log(document.querySelectorAll("p.sampleClass"));
+</script>
+<script type="text/javascript">
+/* All of our JavaScript code will go here */
+console.log(document.querySelectorAll("p.sampleClass"));
+document.querySelectorAll("p.sampleClass")[0].innerText = "My Text was Changed!";
+</script>
+<script type="Text/javascript">
+/*All of our JavaScript code will go here */
+console.log(document.querySelectorAll("p.sampleClass"));
+
+document.querySelectorAll("p.sampleClass")[0].innerHTML = "<span>" "I am a whole new element!</span>";
+</script>
+
+
+
+<script>
+    var x = 10;
+    console.log(x)
+</script>
+
+</body>
+
+
+</html>
